@@ -1,0 +1,33 @@
+{
+  "name": "mw-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --timeout 2000",
+    "lint": "./node_modules/.bin/eslint .",
+    "precommit": "npm run lint",
+    "prepush": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/workerco/mw-authentication.git"
+  },
+  "keywords": [
+    "authentication"
+  ],
+  "author": "Andrei Lavrenyuk",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/workerco/mw-authentication#readme",
+  "dependencies": {
+    "app-utils": "git+https://workerco:3aXno3LwK6gnBcPyEdDrVgIaJ2phG9II@bitbucket.org/workerco/app-utils.git",
+    "chai": "^3.5.0",
+    "debug": "^2.2.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "mocha": "^3.0.2",
+    "parent-require": "^1.0.0",
+    "underscore": "^1.8.3"
+  }
+}
