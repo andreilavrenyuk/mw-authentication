@@ -11,7 +11,7 @@ const User = mongoose.model('User');
 module.exports = {
 
   authorize(ctx, next) {
-    const apikey = ctx.request.body.apikey;
+    const apikey = ctx.request.body.apikey || ctx.request.headers['x-api-key'];
     if (!apikey) {
       throw new AppError(apikey.length ? 'Apikey is not valid' : 'Request hasn\'t apikey');
     }
