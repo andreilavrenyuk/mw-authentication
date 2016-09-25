@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c562dcd-356d-4376-8cb2-950e9aa52673" name="Default" comment="init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="3c562dcd-356d-4376-8cb2-950e9aa52673" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="mw-authentication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -302,12 +300,20 @@
       <option name="presentableId" value="Default" />
       <updated>1474609656719</updated>
       <workItem from="1474609657909" duration="14940000" />
-      <workItem from="1474792828911" duration="1914000" />
+      <workItem from="1474792828911" duration="1993000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: authorize with apikey in headers">
+      <created>1474798247062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474798247062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16854000" />
+    <option name="totallyTimeSpent" value="16933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -347,7 +353,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="feat: authorize with apikey in headers" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: authorize with apikey in headers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
