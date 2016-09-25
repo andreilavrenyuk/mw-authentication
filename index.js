@@ -13,7 +13,7 @@ module.exports = {
   authorize(ctx, next) {
     const apikey = ctx.request.body.apikey || ctx.request.headers['x-api-key'];
     if (!apikey) {
-      throw new AppError(_.isUndefined(apikey) ? 'Request hasn\'t apikey' : 'Apikey is not valid');
+      throw new AppError(_.isUndefined(apikey) ? 'Request hasn\'t apikey' : 'Apikey is not valid', 401);
     }
     return User.findOne({ apikey }).then((user) => {
       if (!user) {
