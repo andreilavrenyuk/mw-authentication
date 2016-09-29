@@ -11,9 +11,9 @@ const User = mongoose.model('User');
 module.exports = {
 
   authorize(ctx, next) {
-    const apikey = ctx.request.body.apikey;
+    const apikey = ctx.request.body.apikey || ctx.request.headers['x-api-key'];
     if (!apikey) {
-      throw new AppError(apikey.length ? 'Apikey is not valid' : 'Request hasn\'t apikey');
+      throw new AppError(_.isUndefined(apikey) ? 'Request hasn\'t apikey' : 'Apikey is not valid', 401);
     }
     return User.findOne({ apikey }).then((user) => {
       if (!user) {
@@ -21,8 +21,6 @@ module.exports = {
       }
       ctx._user = user;
       return next();
-    }).catch((err) => {
-      throw err;
     });
   },
 
@@ -30,53 +28,41 @@ module.exports = {
     //noinspection JSUnresolvedVariable
     const token = ctx.request.headers['x-access-token'];
     if (!token) {
-      throw new AppError('Request hasn\'t access token', 401);
+      return new AppError('Request hasn\'t access token', 401);
     }
-    try {
+    //noinspection JSUnresolvedFunction
+    return User.decodeToken(token).then((decoded) => {
       //noinspection JSUnresolvedFunction
-      return User.decodeToken(token).then((decoded) => {
-        //noinspection JSUnresolvedFunction
-        return User.findById(decoded.iss).then((doc) => {
-          if (!doc) {
-            throw new AppError(401);
-          }
-          ctx._user = doc;
-          return next();
-        }).catch((err) => {
-          throw err;
-        });
-      }).catch(() => {
-        throw new AppError('Access token has expired', 401);
-      });
-    } catch (err) {
-      throw err;
-    }
+      return User.findById(decoded.iss).then((doc) => {
+        if (!doc) {
+          throw new AppError(401);
+        }
+        ctx._user = doc;
+        return next();
+      })
+    }, () => {
+      return new AppError('Access token has expired', 401);
+    });
   },
 
   tryAauthenticate: (ctx, next) => {
     //noinspection JSUnresolvedVariable
     const token = ctx.request.headers['x-access-token'];
     if (!token) {
-      throw new AppError('Request hasn\'t access token', 401);
+      return new AppError('Request hasn\'t access token', 401);
     }
-    try {
+    //noinspection JSUnresolvedFunction
+    return User.decodeToken(token).then((decoded) => {
       //noinspection JSUnresolvedFunction
-      return User.decodeToken(token).then((decoded) => {
-        //noinspection JSUnresolvedFunction
-        return User.findById(decoded.iss).then((doc) => {
-          if (doc) {
-            ctx._user = doc;
-          }
-          return next();
-        }).catch((err) => {
-          throw err;
-        });
-      }).catch(() => {
-        throw new AppError('Access token has expired', 401);
+      return User.findById(decoded.iss).then((doc) => {
+        if (doc) {
+          ctx._user = doc;
+        }
+        return next();
       });
-    } catch (err) {
-      throw err;
-    }
+    }, () => {
+       return new AppError('Access token has expired', 401);
+    });
   },
 
   requireRoles(roles) {
@@ -84,7 +70,7 @@ module.exports = {
       if (ctx._user && _.intersection(ctx._user.roles || [], roles).length > 0) {
         return next();
       }
-      throw new AppError(401);
+      return new AppError(401);
     };
   }
 };
