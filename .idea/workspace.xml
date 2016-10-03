@@ -39,6 +39,9 @@
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="18">
@@ -48,20 +51,17 @@
               <second_editor />
             </state>
           </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="15" column="102" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
+            <state relative-caret-position="467">
+              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
               <folding>
-                <marker date="1474802468769" expanded="true" signature="846:1244" ph="{...}" />
-                <marker date="1474802468769" expanded="true" signature="1285:1838" ph="{...}" />
-                <marker date="1474802468769" expanded="true" signature="1472:1838" ph="{...}" />
+                <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+                <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+                <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -308,7 +308,8 @@
       <workItem from="1474792828911" duration="2017000" />
       <workItem from="1474801696502" duration="103000" />
       <workItem from="1474801852527" duration="419000" />
-      <workItem from="1474802453900" duration="15000" />
+      <workItem from="1474802453900" duration="31000" />
+      <workItem from="1475481124290" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="feat: authorize with apikey in headers">
       <created>1474798247062</created>
@@ -338,11 +339,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474802265907</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: response code">
+      <created>1474802480107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1474802480107</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17494000" />
+    <option name="totallyTimeSpent" value="17531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -385,7 +393,8 @@
     <MESSAGE value="feat: authorize with apikey in headers" />
     <MESSAGE value="fix: undefined api key" />
     <MESSAGE value="fix: remove `catch` in promises" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove `catch` in promises" />
+    <MESSAGE value="fix: response code" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: response code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -401,6 +410,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="18">
@@ -410,18 +422,15 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding>
-            <marker date="1474802468769" expanded="true" signature="846:1244" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1285:1838" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1472:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -451,6 +460,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="18">
@@ -460,18 +472,15 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1474802468769" expanded="true" signature="846:1244" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1285:1838" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1472:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -501,6 +510,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="18">
@@ -510,18 +522,15 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1474802468769" expanded="true" signature="846:1244" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1285:1838" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1472:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -551,6 +560,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="18">
@@ -560,8 +572,55 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="18">
+            <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
@@ -569,9 +628,9 @@
         <state relative-caret-position="1530">
           <caret line="85" column="7" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
           <folding>
-            <marker date="1474802468769" expanded="true" signature="846:1244" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1285:1838" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1472:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -593,6 +652,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="18">
@@ -601,9 +663,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/app-utils/index.js" />
@@ -633,12 +692,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="15" column="102" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
+        <state relative-caret-position="467">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
-            <marker date="1474802468769" expanded="true" signature="846:1244" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1285:1838" ph="{...}" />
-            <marker date="1474802468769" expanded="true" signature="1472:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="846:1244" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1285:1838" ph="{...}" />
+            <marker date="1475481144479" expanded="true" signature="1472:1838" ph="{...}" />
           </folding>
         </state>
       </provider>
