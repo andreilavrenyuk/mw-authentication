@@ -28,7 +28,7 @@ module.exports = {
     //noinspection JSUnresolvedVariable
     const token = ctx.request.headers['x-access-token'];
     if (!token) {
-      return new AppError('Request hasn\'t access token', 401);
+      throw new AppError('Request hasn\'t access token', 401);
     }
     //noinspection JSUnresolvedFunction
     return User.decodeToken(token).then((decoded) => {
@@ -39,9 +39,9 @@ module.exports = {
         }
         ctx._user = doc;
         return next();
-      })
+      });
     }, () => {
-      return new AppError('Access token has expired', 401);
+      throw new AppError('Access token has expired', 401);
     });
   },
 
@@ -49,7 +49,7 @@ module.exports = {
     //noinspection JSUnresolvedVariable
     const token = ctx.request.headers['x-access-token'];
     if (!token) {
-      return new AppError('Request hasn\'t access token', 401);
+      throw new AppError('Request hasn\'t access token', 401);
     }
     //noinspection JSUnresolvedFunction
     return User.decodeToken(token).then((decoded) => {
@@ -61,7 +61,7 @@ module.exports = {
         return next();
       });
     }, () => {
-       return new AppError('Access token has expired', 401);
+      throw new AppError('Access token has expired', 401);
     });
   },
 
@@ -70,7 +70,7 @@ module.exports = {
       if (ctx._user && _.intersection(ctx._user.roles || [], roles).length > 0) {
         return next();
       }
-      return new AppError(403);
+      throw new AppError(403);
     };
   }
 };
