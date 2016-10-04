@@ -70,7 +70,7 @@ module.exports = {
       if (ctx._user && _.intersection(ctx._user.roles || [], roles).length > 0) {
         return next();
       }
-      throw new AppError(401);
+      throw new AppError(403);
     };
   }
 };
