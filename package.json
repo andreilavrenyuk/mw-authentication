@@ -27,7 +27,6 @@
     "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-import": "^1.15.0",
     "mocha": "^3.0.2",
-    "parent-require": "^1.0.0",
     "underscore": "^1.8.3"
   }
 }

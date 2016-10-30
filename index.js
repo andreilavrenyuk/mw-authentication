@@ -1,10 +1,7 @@
 
 const _ = require('underscore');
 const AppError = require('app-utils').AppError;
-const prequire = require('parent-require');
-
-const mongoose = prequire('mongoose');
-
+const mongoose = module.parent.require('mongoose');
 
 const User = mongoose.model('User');
 
