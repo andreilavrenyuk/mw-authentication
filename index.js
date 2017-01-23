@@ -54,9 +54,9 @@ module.exports = function Auth(model) {
   this.authorize = (schema = 'jwt') => (ctx, next) => {
     let result;
     if (schema === 'jwt') {
-      result = jwtAuth(ctx.request.headers).bind(this);
+      result = jwtAuth.call(this, ctx.request.headers);
     } else if (schema === 'apikey') {
-      result = apikeyAuth(ctx.request.body).bind(this);
+      result = apikeyAuth.call(this, ctx.request.body);
     } else {
       throw new AppError('Unsupported authorization schema');
     }
@@ -74,9 +74,9 @@ module.exports = function Auth(model) {
   this.tryAuthorize = (schema = 'jwt') => (ctx, next) => {
     let result;
     if (schema === 'jwt') {
-      result = jwtAuth(ctx.request.headers).bind(this);
+      result = jwtAuth.call(this, ctx.request.headers);
     } else if (schema === 'apikey') {
-      result = apikeyAuth(ctx.request.body).bind(this);
+      result = apikeyAuth.call(this, ctx.request.body);
     } else {
       throw new AppError('Unsupported authorization schema');
     }
