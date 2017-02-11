@@ -67,7 +67,7 @@ module.exports = function Auth(model) {
           throw new AppError(401);
         }
         ctx._user = user;
-        next();
+        return next();
       })
       .catch(() => {
         throw new AppError(401);
