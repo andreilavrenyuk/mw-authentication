@@ -68,9 +68,6 @@ module.exports = function Auth(model) {
         }
         ctx._user = user;
         return next();
-      })
-      .catch(() => {
-        throw new AppError(401);
       });
   };
 
@@ -91,8 +88,7 @@ module.exports = function Auth(model) {
         }
         ctx._user = user;
         return next();
-      })
-      .catch(() => {});
+      });
   };
 
   this.requireRoles = roles => (ctx, next) => {
