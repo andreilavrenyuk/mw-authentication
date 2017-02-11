@@ -92,7 +92,7 @@ module.exports = function Auth(model) {
         ctx._user = user;
         return next();
       })
-      .catch(() => next());
+      .catch(() => {});
   };
 
   this.requireRoles = roles => (ctx, next) => {
